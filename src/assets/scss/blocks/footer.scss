@@ -1,0 +1,20 @@
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.footer__link img{
+	width: 150px;
+	height: 50px;
+	height: 100%;
+}
+
+.footer__link{
+	padding: 75px 15px 50px 15px;
+}
+@include breakpoint($mobile-bp){
+	.footer__link{
+		padding: 40px 0;
+	}
+}

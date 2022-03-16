@@ -1,0 +1,108 @@
+.healt{
+	display: flex;
+	@include breakpoint($mobile-bp){
+		flex-wrap: wrap;
+		
+	}
+}
+.healt__item{
+	flex: 1 1 33%;
+	z-index: 1;
+	text-align: center;
+	width: 278.17px;
+	min-height: 276.52px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+	border-radius: 8px;
+	margin: 0 36px;
+	@include breakpoint($mobile-bp){
+		flex: 1 1 100%;
+		margin-bottom: 10px;
+	}
+	
+}
+
+.healt__title{
+	font-family: Rubik;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 138.5%;
+	text-align: center;
+	letter-spacing: 0.08em;
+	color: #000000;
+	margin-bottom: 12px;
+}
+
+.healt__sabtitle{
+	font-family: Rubik;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 138.5%;
+	text-align: center;
+	letter-spacing: 0.08em;
+	color: #616161;
+	padding: 0px 20px;
+}
+
+.healt__icon{
+	padding: 36px 0px 58px 0px;
+}
+
+.healts__decor1{
+	position: absolute;
+	
+	width: 65.75px;
+	height: 65.75px;
+	left: 20px;
+	bottom: 40px;
+	background: #EC5863;
+	border-radius: 16px;
+	transform: rotate(-30deg);
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}
+.healts__decor2{
+	position: absolute;
+	
+	width: 96.96px;
+	height: 96.96px;
+	left: 270px;
+	top: 250px;
+	background: #EC5863;
+	border-radius: 30px;
+	transform: rotate(105deg);
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}
+
+.healts__decor3{
+	position: absolute;
+
+	width: 127.47px;
+	height: 127.47px;
+	left: 620px;
+	bottom: 50px;
+	background: #EC5863;
+	border-radius: 30px;
+	transform: rotate(-30deg);
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}
+
+.healts__decor4{
+	position: absolute;
+	
+	width: 65.75px;
+	height: 65.75px;
+	right: 15px;
+	top: 170px;
+	background: #EC5863;
+	border-radius: 16px;
+	transform: rotate(-30deg);
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}

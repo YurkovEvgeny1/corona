@@ -1,0 +1,51 @@
+@include breakpoint($tablet-bp){
+	.burger{
+		display: block;
+		position: relative;
+		z-index: 5;
+		width: 30px;
+		height: 20px;
+		margin:0px 15px 0px 0px;
+	}
+	.burger__menu{
+		position: absolute;
+		z-index: 5;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		border: 1px solid $black;
+		transition: all 0.3s ease 0s;
+	}
+	.burger::before,
+	.burger::after{
+		content: "";
+		position: absolute;
+		z-index: 5;
+		width: 100%;
+		height: 2px;
+		border: 1px solid $black;
+		transition: all 0.3s ease 0s;
+	}
+	.burger::before{
+	top: 0;
+}
+	.burger::after{
+		bottom: 0;
+	}
+
+
+	.burger.active:before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.burger.active{
+		.burger__menu{
+			transform: scale(0);
+		}
+	}
+	
+}

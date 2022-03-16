@@ -1,0 +1,79 @@
+.features{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 135px 30px 30px 94px;
+	margin: 0 20px;
+	@include breakpoint($mobile-bp){
+		flex-wrap: wrap;
+		padding: 20px;
+		margin: 0;
+	}
+}
+
+.features__app{
+	position: relative;
+	margin-right: 60px;
+	&::before{
+		content: "";
+		position: absolute;
+		bottom: 23px;
+		left: 40px;
+		z-index: 1;
+		display: block;
+		width: 206px;
+		height: 27px;
+		border-radius: 16px;
+		background: rgba(240, 240, 240, 0.49);
+	}
+	@include breakpoint($mobile-bp){
+		margin: 0 auto;
+	}
+}
+
+.features__icon{
+	position: relative;
+	z-index: 1;
+}
+
+.features__decor1{
+	position: absolute;
+	display: block;
+	width: 147px;
+	height: 147px;
+	top: 110px;
+	left: 75px;
+	background: #EC5863;
+	border-radius: 30px;
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}
+
+.features__decor2{
+	position: absolute;
+	display: block;
+	width: 77px;
+	height: 77px;
+	background: #EC5863;
+	border-radius: 30px;
+	bottom: 30px;
+	left: 105px;
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}
+
+.features__decor3{
+	position: absolute;
+	display: block;
+	width: 77px;
+	height: 77px;
+	background: #EC5863;
+	border-radius: 30px;
+	bottom: 145px;
+	left: 330px;
+	@include breakpoint($mobile-bp){
+		display: none;
+	}
+}

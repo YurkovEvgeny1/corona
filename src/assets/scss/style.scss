@@ -1,0 +1,37 @@
+body {
+    font-size: 21px;
+    color: #000;
+    background-color: #fff;
+    font-family: rubik;
+}
+body.lock{
+    overflow: hidden;
+}
+
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main{
+    flex: 1 1 auto;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+// vendor
+@import "vendor/reset";
+@import "vendor/var";
+
+// block
+@import "blocks/header";
+@import "blocks/section";
+@import "blocks/title";
+@import "blocks/features";
+@import "blocks/experts";
+@import "blocks/healt";
+@import "blocks/footer";
+@import "blocks/burger";
